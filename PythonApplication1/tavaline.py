@@ -1,4 +1,4 @@
-from MyModule import *
+from mymodule import *
 
 k=["mari","Juku","kati"]
 s=["1234","4321", "abcdf1"]

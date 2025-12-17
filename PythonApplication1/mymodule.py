@@ -119,4 +119,3 @@ def parooli_taastamine(k:list, s:list) -> None:
     uus_psw = ''.join([random.choice(ls) for x in range(12)])
     s[k.index(login)] = uus_psw
     print("Sinu uus parool:", uus_psw)
-    

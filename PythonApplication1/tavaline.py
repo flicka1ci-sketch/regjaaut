@@ -1,28 +1,28 @@
 from mymodule import *
 
-k=["mari","Juku","kati"]
-s=["1234","4321", "abcdf1"]
+kasutajad = []
+paroolid = []
 
 while True:
-    print("\n=== Põhiprogrammi menüü ===")
+    print("\n--- MENÜÜ ---")
     print("1 - Registreerimine")
-    print("2 - Autoriseerimine (Sisselogimine)")
+    print("2 - Autoriseerimine")
     print("3 - Nime või parooli muutmine")
     print("4 - Unustatud parooli taastamine")
-    print("5 - Lõpetamine")
-    
-    valik = input("Vali number (1-5): ")
-    
+    print("5 - Välju")
+
+    valik = input("Vali: ")
+
     if valik == "1":
-        registreerimine(k, s)
+        registreerimine(kasutajad, paroolid)
     elif valik == "2":
-        autoriseerimine(k, s)
+        autoriseerimine(kasutajad, paroolid)
     elif valik == "3":
-        muuda(k, s)
+        muutmine(kasutajad, paroolid)
     elif valik == "4":
-        parooli_taastamine(k, s)
+        parooli_taastamine(kasutajad, paroolid)
     elif valik == "5":
-        print("Programm lõpetab töö. Nägemist!")
+        print("Programmi töö lõpetatud.")
         break
     else:
-        print("Vale valik! Proovi uuesti.")
+        print("Vale valik!")
